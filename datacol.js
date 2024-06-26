@@ -60,3 +60,10 @@ let newarrs = [{
 ]
 
 console.log(newarrs);
+
+//==============part 4 sorting and manipulating data====================
+
+//removing last element from array
+
+newarrs.pop([3]);
+console.log(newarrs);
