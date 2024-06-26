@@ -80,3 +80,15 @@ let obj = {
 newarrs.splice(1, 0, obj);
 
 console.log(newarrs);
+
+//adding object to the end of an array using push
+
+let obj1 = {
+    id: "7",
+    name: "Bilbo",
+    occupation: "none",
+    age: "111"
+};
+
+newarrs.push(obj1);
+console.log(newarrs);
