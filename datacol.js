@@ -67,3 +67,16 @@ console.log(newarrs);
 
 newarrs.pop([3]);
 console.log(newarrs);
+
+// inserting new data to index 1 using splice
+
+let obj = {
+    id: "48",
+    name: "Barry",
+    occupation: "Runner",
+    age: "25"
+};
+
+newarrs.splice(1, 0, obj);
+
+console.log(newarrs);
