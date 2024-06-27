@@ -95,9 +95,39 @@ console.log(newarrs);
 
 //calculating average age using loops  
 
-// for (let k = 0; k < newarrs.length; k++){ //still have to complete this part
-//     for (let l = 0; l < )
-// }
+//extracting ages
+let age1 = arry2[3];
+console.log(age1);
+let age2 = arry3[3];
+console.log(age2);
+let age3 = arry4[3];
+console.log(age3);
+let age4 = arry5[3];
+console.log(age4);
+
+let arrAges = [];
+arrAges.push(age1, age2, age3, age4); //creating new array with just ages
+console.log(arrAges);
+let sumAges = 0;
+let avgAge = 0;
+ for (let i = 0; i < arrAges.length; i++) {
+  sumAges += arrAges[i];
+  
+ }
+  avgAge = sumAges / arrAges.length;
+  console.log(avgAge + ' ' + 'years');
+
+
+// let age1 = arr1[3];
+// console.log(age1);
+// let age2 = (newarrs[1][3]);
+// let age3 = (newarrs[2][3]);
+// let age4 = (newarrs[3][3]);
+
+// let ageArray = [ ];
+ 
+
+
 
 
 //==========part 5 Full circle==================================
