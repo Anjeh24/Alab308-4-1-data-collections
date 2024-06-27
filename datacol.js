@@ -92,3 +92,57 @@ let obj1 = {
 
 newarrs.push(obj1);
 console.log(newarrs);
+
+//calculating average age using loops  
+
+// for (let k = 0; k < newarrs.length; k++){ //still have to complete this part
+//     for (let l = 0; l < )
+// }
+
+
+//==========part 5 Full circle==================================
+//converting newarrs array back to csv using join()
+
+//credits, geeksforgeeks.
+
+
+function objToCvs(newarrs) {
+    let tocsv = ' ';
+
+    //extracting first row with keys
+    const firstRow = Object.keys(newarrs[0]);
+    tocsv += firstRow.join(',') + '\n';
+
+    //extracting the remaining values from the object
+    newarrs.forEach(objkt => {
+        const vals = firstRow.map(firstRow => objkt[firstRow]);
+        tocsv += vals.join(',') + '\n';
+        
+    });
+    return tocsv;
+}
+
+//converting the object to csv
+
+const obtoCsv = objToCvs(newarrs);
+console.log(obtoCsv);
+
+
+
+
+
+// newarrs.flat();
+// console.log(newarrs);
+
+// newarrs.toString();
+// console.log(newarrs);
+
+
+// let emparr = [];
+
+// for (var i = 0; i < arrs.length; i++){
+//     if (arrs[i][i] !== " ");
+//     emparr = [i];
+
+// }
+// console.log(emparr);
